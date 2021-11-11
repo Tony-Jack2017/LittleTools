@@ -1,6 +1,25 @@
 .App {
   text-align: center;
+  background-color: rgba(245,247,250, 1);
+  height: 100vh;
 }
+
+.list {
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  width: 50%;
+}
+
+.item {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 231, 235, 1);
+}
+
+.content
 
 .App-logo {
   height: 40vmin;

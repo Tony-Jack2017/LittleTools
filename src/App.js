@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react'
+import ProgressBar from './components/ProgressBar';
 import './App.css';
 
 function App() {
+
+  const [props, setProps] = useState({width: '0%'})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="list">
+        <div className="item">
+          <div className="content">
+            <ProgressBar props={props} />
+          </div>
+        </div>
+      </div>
+      <button onClick={() => {setProps({width: '100%'})}}>{props.width}</button>
     </div>
-  );
+
+  )
 }
 
 export default App;
