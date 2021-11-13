@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ProgressBar from './components/ProgressBar';
+import Wave from './components/Wave';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <div className="item">
           <div className="content">
             <ProgressBar props={props} />
+            <Wave />
           </div>
         </div>
       </div>

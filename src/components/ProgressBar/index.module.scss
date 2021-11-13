@@ -1,9 +1,9 @@
 .progress-bar {
   width: 200px;
-  height: 10px;
   .container {
     width: 100%;
-    height: 100%;
+    height: 10px;
+    margin: 20px auto;
     background-color: rgba(224, 224, 224, 1);
     border-radius: 20px;
     .fill {
@@ -13,5 +13,13 @@
       transition: width .2s linear;
       height: 100%;
     }
+  }
+  .circle-progress-bar {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0, #b96f47 25%, #b3324c 25%, #B5838D);
+    mask: radial-gradient(transparent, transparent 50%, #000 50%, #000 0);
   }
 }
