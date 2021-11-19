@@ -1,11 +1,20 @@
+import styles from './index.module.scss'
 
-function DragVisible(decorate,component) {
+import React from "react";
 
-  return (
-    <div>
+function DragVisible(Component) {
 
-    </div>
-  )
+  const drag = (e) => {
+    // React.cloneElement(<Component />)
+  };
+
+  return function () {
+    return (
+      <div className={styles.drage} draggable="true" onDragStart={drag}>
+        <Component />
+      </div>
+    )
+  }
 }
 
-export default DragVisible
+export default DragVisible;

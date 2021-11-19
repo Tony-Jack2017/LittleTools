@@ -1,6 +1,16 @@
 import React, { useRef, useState } from 'react'
 import styles from './index.module.scss'
 
+import DragVisible from '../../common/DragVisible'
+
+
+const Hello = () => {
+  return (<p>Hello</p>)
+}
+
+const HelloDrag = DragVisible(Hello)
+
+
 const ElementDrag = (props) => {
 
   function CloneDemo() {
@@ -31,9 +41,12 @@ const ElementDrag = (props) => {
           })
         }
       </div>
-      <div id="text" className={styles.drage} draggable="true" onDragStart={drag}>
+      
+      <HelloDrag />
+
+      {/* <div id="text" className={styles.drage} draggable="true" onDragStart={drag}>
         <p>Hello</p>
-      </div>
+      </div> */}
     </div>
   )
 }
