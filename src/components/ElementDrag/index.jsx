@@ -4,14 +4,11 @@ import styles from './index.module.scss'
 import DragVisible from '../../common/DragVisible'
 import Container from './components/container'
 
-
-const Hello = () => {
-  return (<p>Hello</p>)
-}
+import ImageComponent from './elements/ImageComponent'
 
 const DragingElement = React.createContext(null);
 
-const HelloDrag = DragVisible(Hello, DragingElement)
+const HelloDrag = DragVisible(ImageComponent, DragingElement)
 
 const ElementDrag = (props) => {
 
