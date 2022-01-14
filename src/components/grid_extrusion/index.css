@@ -1,0 +1,42 @@
+.drag-cotainer {
+    width: 40%;
+    margin: 200px auto;
+    display: flex;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    text-align: center;
+    background: darkmagenta;
+    margin: 5px auto;
+    color: #FFFFFF;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+.content {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+.content ul {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.item:hover {
+    cursor: grab;
+}
+
+.draggingItem {
+    display: none;
+}
+.fake_drag_item {
+    position: fixed;
+}
