@@ -1,4 +1,13 @@
 .file_upload {
   width: 50%;
   margin: 0px auto;
+  .upload_file {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #00cef3;
+    border-radius: 8px;
+    &:hover {
+      border-color: #0281ea;
+    }
+  }
 }
