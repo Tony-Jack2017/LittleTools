@@ -62,7 +62,6 @@ const FileUploadAnimateSuccess = (props:SuccessProps) => {
         context.fillStyle = 'rgba(0,0,0,0)';
         context.fillRect(0, 0, width, height);
         context.beginPath();
-
         const time = setInterval(() => {
           loop(context)
         }, 1000 / 200);
