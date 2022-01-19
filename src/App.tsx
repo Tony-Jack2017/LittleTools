@@ -5,14 +5,14 @@ import React, {ReactElement} from "react";
 // import DragElement from "./components/drag_element";
 // import FileUpload from "./components/file_upload";
 
-import FileUploadAnimate from "./components/animate/file_upload"
+import FileUploadAnimateSuccess from "./components/animate/file_upload"
 
 function App():ReactElement {
   return (
     <div className="App">
       {/*<GridExtrusion />*/}
       {/*<DragElement />*/}
-      <FileUploadAnimate />
+      <FileUploadAnimateSuccess width={50} height={50} />
     </div>
 
   )
