@@ -27,9 +27,9 @@ const FileUploadDoing = (props: FileUploadDoingProps) => {
         context.fillRect(0, 0, width, height);
         context.beginPath()
         context.lineCap = "round"
-        context.lineWidth = 10
-        context.strokeStyle = "red"
-        context.arc(width / 2, height / 2, (width / 2) - 10, 0, 360)
+        context.lineWidth = 6
+        context.strokeStyle = "#ebedf0"
+        context.arc(width / 2, height / 2, (width / 2) - 6, 0, 360)
         context.stroke()
         context.closePath(); //路径结束
         console.log(111)
@@ -48,8 +48,8 @@ const FileUploadDoing = (props: FileUploadDoingProps) => {
         context.beginPath()
         context.lineCap = "round"
         context.lineWidth = 10
-        context.strokeStyle = "red"
-        context.arc(width / 2, height / 2, (width / 2) - 10, 0, 360)
+        context.strokeStyle = "#ebedf0"
+        context.arc(width / 2, height / 2, (width / 2) - 6, 0, 360)
         context.stroke()
         context.closePath(); //路径结束
       }
@@ -62,9 +62,9 @@ const FileUploadDoing = (props: FileUploadDoingProps) => {
     context.restore();
     context.beginPath();
     context.lineCap = "round"
-    context.lineWidth = 10
-    context.arc(width / 2, height / 2, (width / 2) - 10, startAngle, diffAngle + startAngle, false);
-    context.strokeStyle = 'green';
+    context.lineWidth = 6
+    context.arc(width / 2, height / 2, (width / 2) - 6, startAngle, diffAngle + startAngle, false);
+    context.strokeStyle = 'rgb(82, 196, 26)';
     context.stroke();
     context.closePath();
   }
